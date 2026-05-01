@@ -154,14 +154,18 @@
     padding:14px 28px;border-radius:var(--radius-sm);
     text-decoration:none;transition:all 0.2s;cursor:pointer;
     border:none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0.1);
+    touch-action: manipulation;
   }
   .btn-primary{background:var(--red);color:#fff;}
   .btn-primary:hover{opacity:0.88;transform:translateY(-2px);}
   .btn-secondary{
-    background:rgba(255,255,255,0.07);color:#EEEEf5;
-    border:1px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.10);color:#EEEEf5;
+    border:1.5px solid rgba(255,255,255,0.35);
+    cursor:pointer;
   }
-  .btn-secondary:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.35);transform:translateY(-2px);}
+  .btn-secondary:hover{background:rgba(255,255,255,0.18);border-color:rgba(255,255,255,0.6);transform:translateY(-2px);}
+  .btn-secondary:active{opacity:0.8;transform:scale(0.98);}
   .btn-ghost{
     background:rgba(255,255,255,0.05);color:#C8C8DC;
     border:1px solid rgba(255,255,255,0.15);
@@ -555,13 +559,13 @@
 
 <!-- NAV -->
 <nav>
-  <a href="javascript:void(0)" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="nav-logo">Татьяна Михненко<span>Психология действий</span></a>
+  <a href="#" class="nav-logo">Татьяна Михненко<span>Психология действий</span></a>
   <ul class="nav-links">
-    <li><a href="javascript:void(0)" onclick="document.getElementById('diagnostics').scrollIntoView({behavior:'smooth'})">Диагностики</a></li>
-    <li><a href="javascript:void(0)" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Продукты</a></li>
-    <li><a href="javascript:void(0)" onclick="document.getElementById('personal').scrollIntoView({behavior:'smooth'})">Личная работа</a></li>
-    <li><a href="javascript:void(0)" onclick="document.getElementById('articles').scrollIntoView({behavior:'smooth'})">Статьи</a></li>
-    <li><a href="javascript:void(0)" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Обо мне</a></li>
+    <li><a href="#diagnostics">Диагностики</a></li>
+    <li><a href="#products">Продукты</a></li>
+    <li><a href="#personal">Личная работа</a></li>
+    <li><a href="#articles">Статьи</a></li>
+    <li><a href="#about">Обо мне</a></li>
   </ul>
 </nav>
 
@@ -570,7 +574,7 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
-  <div class="hero-tag">Психология · Символические карты · ИИ-навигация</div>
+  <div class="hero-tag">Нейронаука · Восточные системы · ИИ-навигация</div>
   <h1 class="hero-title">
     Разбор<br>
     <em>внутреннего</em><br>
@@ -1201,7 +1205,7 @@
     <div class="cta-btns reveal">
       <a href="https://michnenkotanya-pixel.github.io/crisis-test/" class="btn btn-primary" target="_blank">Тест на уровень кризиса</a>
       <a href="https://michnenkotanya-pixel.github.io/battery/" class="btn btn-primary" target="_blank">Где твоя батарейка</a>
-      <a href="javascript:void(0)" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})" class="btn btn-secondary">Продукты в записи</a>
+      <a href="#products" class="btn btn-secondary">Продукты в записи</a>
       <a href="https://t.me/Tatyana_Michnenko?text=%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" class="btn btn-secondary" target="_blank">Записаться на личный разбор</a>
     </div>
   </div>
@@ -1209,7 +1213,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="javascript:void(0)" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="footer-logo">Психология действий</a>
+  <a href="#" class="footer-logo">Психология действий</a>
   <p class="footer-disclaimer">Материалы сайта носят информационный и образовательный характер и не заменяют медицинскую, психиатрическую или психотерапевтическую помощь.</p>
   <div class="footer-links">
     <a href="https://t.me/Tatyana_Michnenko" target="_blank">Telegram</a>
